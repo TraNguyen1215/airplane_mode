@@ -13,12 +13,15 @@
   "source_airport_code",
   "route",
   "column_break_lvny",
+  "gate_number",
   "duartion",
   "status",
   "destination_airport",
   "destination_airport_code",
   "amended_from",
-  "is_published"
+  "is_published",
+  "section_break_qhoh",
+  "flight_crew"
  ],
  "fields": [
   {
@@ -104,6 +107,23 @@
    "fieldname": "is_published",
    "fieldtype": "Check",
    "label": "Is Published"
+  },
+  {
+   "fieldname": "section_break_qhoh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "flight_crew",
+   "fieldtype": "Table",
+   "label": "Flight Crew",
+   "options": "Flight Crew Member Assignment"
+  },
+  {
+   "fieldname": "gate_number",
+   "fieldtype": "Link",
+   "label": "Gate Number",
+   "options": "Airplane Gate Number",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
@@ -117,7 +137,7 @@
    "link_fieldname": "flight"
   }
  ],
- "modified": "2026-03-19 15:47:05.629169",
+ "modified": "2026-03-20 11:24:20.401632",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane Flight",

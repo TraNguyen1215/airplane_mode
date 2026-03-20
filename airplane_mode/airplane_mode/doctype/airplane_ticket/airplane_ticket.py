@@ -22,6 +22,24 @@ class AirplaneTicket(Document):
 
         total_addons = sum([d.amount for d in self.add_ons])
         self.total_amount = flt(self.flight_price) + flt(total_addons)
+
+        flight = frappe.get_doc("Airplane Flight", self.flight)
+
+        airplane = frappe.get_doc("Airplane", flight.airplane)
+
+        capacity = airplane.capacity
+
+        ticket_count = frappe.db.count(
+            "Airplane Ticket",
+            {
+                "flight": self.flight,
+                "docstatus": ["!=", 2]
+            }
+        )
+
+        if ticket_count >= capacity:
+            frappe.throw("Flight is already full")
+
     def before_submit(self):
         if self.status != "Boarded":
             frappe.throw("Chỉ có thể Submit vé khi trạng thái là 'Boarded'!")

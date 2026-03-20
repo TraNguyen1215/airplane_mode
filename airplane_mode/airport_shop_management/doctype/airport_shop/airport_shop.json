@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: {airport}-{shop_number}-{area}m2-{MM}-{YYYY}",
+ "creation": "2026-03-20 11:40:51.822889",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "shop_name",
+  "airport",
+  "status",
+  "area",
+  "route",
+  "column_break_lohn",
+  "shop_number",
+  "tenant",
+  "current_contract",
+  "shop_type",
+  "is_published"
+ ],
+ "fields": [
+  {
+   "description": "Name of shop in airport",
+   "fieldname": "shop_name",
+   "fieldtype": "Data",
+   "label": "Shop Name"
+  },
+  {
+   "description": "Name of Airport. Link to Doctype Airport",
+   "fieldname": "airport",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Airport",
+   "options": "Airport",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "description": "The area of shop (m2)",
+   "fieldname": "area",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Area",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "description": "Activity status ",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Available\nOccupied"
+  },
+  {
+   "description": "The person who rent a shop in airport",
+   "fieldname": "tenant",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tenant",
+   "options": "Tenant"
+  },
+  {
+   "description": "Series Number",
+   "fieldname": "shop_number",
+   "fieldtype": "Data",
+   "label": "Shop Number",
+   "reqd": 1
+  },
+  {
+   "description": "The currant contract",
+   "fieldname": "current_contract",
+   "fieldtype": "Link",
+   "label": "Current Contract",
+   "options": "Shop Contract"
+  },
+  {
+   "fieldname": "column_break_lohn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shop_type",
+   "fieldtype": "Link",
+   "label": "Shop Type",
+   "options": "Shop Type"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published"
+  }
+ ],
+ "grid_page_length": 50,
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
+ "links": [],
+ "modified": "2026-03-20 16:59:33.057769",
+ "modified_by": "Administrator",
+ "module": "Airport Shop Management",
+ "name": "Airport Shop",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "airport_shop",
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

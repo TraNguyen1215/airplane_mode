@@ -22,3 +22,11 @@ class AirplaneFlight(Document):
         airline = frappe.db.get_value("Airplane", self.airplane, "airline")
         context.airline = airline
         context.airline_short = airline.split("-")[0] if airline else ""
+
+    def on_update(self):
+        if self.has_value_changed("gate_number"):
+            frappe.enqueue(
+				"airplane_mode.api.update_gate_in_tickets",
+				flight=self.name,
+				gate=self.gate_number
+			)

@@ -6,3 +6,15 @@
 
 // 	},
 // });
+frappe.ui.form.on("Airline", {
+	refresh: function (frm) {
+		if (!frm.doc.website) {
+			return;
+		}
+
+		frm.add_web_link(
+			frm.doc.website, // URL
+			"Website", // label hiển thị
+		);
+	},
+});

@@ -8,6 +8,8 @@
  "engine": "InnoDB",
  "field_order": [
   "model",
+  "initial_audit_completed",
+  "column_break_fohp",
   "airline",
   "capacity"
  ],
@@ -33,6 +35,18 @@
    "label": "Capacity",
    "non_negative": 1,
    "reqd": 1
+  },
+  {
+   "default": "0",
+   "depends_on": "d\u1ecdc.role",
+   "fieldname": "initial_audit_completed",
+   "fieldtype": "Check",
+   "label": "Initial Audit Completed",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "column_break_fohp",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
@@ -43,7 +57,7 @@
    "link_fieldname": "airplane"
   }
  ],
- "modified": "2026-03-19 15:26:58.517168",
+ "modified": "2026-03-20 09:26:08.208121",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane",
