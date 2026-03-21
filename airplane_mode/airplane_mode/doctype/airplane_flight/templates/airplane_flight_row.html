@@ -1,14 +1,13 @@
-<div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border-bottom: 1px solid #ccc;">
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border-bottom: 1px solid #fff;">
 	<div>
 		<h4 style='margin: 0;'>{{ frappe.db.get_value("Airplane", doc.airplane, "airline").split("-")[0] }}</h4>
-		{{ doc.source_airport_code }} → {{ doc.destination_airport_code }}
+		{{ doc.source_airport_code }} -> {{ doc.destination_airport_code }}
 	</div>
 
 	<div>
-	{{ frappe.utils.format_date(doc.date_of_departure) }} |
+	{{ frappe.utils.format_date(doc.date_of_departure, "d MMMM, YYYY") }} |
 	{{ doc.time_of_departure }} |
-	{{ frappe.utils.format_duration(doc.duration) }}
+	{{ frappe.utils.format_duration(doc.duartion) }}
 	</div>
-
 	<button style="background-color: #007bff; color: white; border: none; padding: 10px 20px; cursor: pointer;"><a style="color: white; text-decoration: none;" href="/{{ doc.route }}">View Flight</a></button>
 </div>

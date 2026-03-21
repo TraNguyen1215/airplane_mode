@@ -1,7 +1,15 @@
-{% extends "templates/web.html" %}
 
 {% block page_content %}
-<h1>{{ title }}</h1>
+<div class="container">
+	<h1>Shop {{ doc.name }}</h1>
+<p>Airport: {{ doc.airport }}</p>
+<p>Shop Number: {{ doc.shop_number }}</p>
+<p>Shop Type: {{ doc.shop_type }}</p>
+<p>Status: {{ doc.status }}</p>
+<a href="/airport_shops/{{ doc.name }}"
+	style="background:green;color:white;padding:10px 20px;text-decoration:none;">
+	View Shop
+</a>
+</div>
 {% endblock %}
 
-<!-- this is a sample default web page template -->

@@ -1,9 +1,11 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "format: {airport}-{shop_number}-{area}m2-{MM}-{YYYY}",
  "creation": "2026-03-20 11:40:51.822889",
  "doctype": "DocType",
+ "document_type": "Document",
  "engine": "InnoDB",
  "field_order": [
   "shop_name",
@@ -100,8 +102,13 @@
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
- "links": [],
- "modified": "2026-03-20 16:59:33.057769",
+ "links": [
+  {
+   "link_doctype": "Airplane",
+   "link_fieldname": "airline"
+  }
+ ],
+ "modified": "2026-03-21 09:22:10.124837",
  "modified_by": "Administrator",
  "module": "Airport Shop Management",
  "name": "Airport Shop",

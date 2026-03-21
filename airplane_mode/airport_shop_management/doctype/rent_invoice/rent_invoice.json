@@ -10,11 +10,12 @@
   "shop",
   "tenant",
   "contract",
-  "column_break_ajna",
-  "month",
   "amount",
+  "column_break_ajna",
+  "airport",
+  "month",
   "status",
-  "receipt_generated"
+  "payment_date"
  ],
  "fields": [
   {
@@ -64,13 +65,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Unpaid\nPaid"
-  },
-  {
-   "default": "0",
-   "fieldname": "receipt_generated",
-   "fieldtype": "Check",
-   "label": "Receipt Generated"
+   "options": "Pending\nPaid\nOverdue"
   },
   {
    "bold": 1,
@@ -82,12 +77,25 @@
    "print_hide": 1,
    "reqd": 1,
    "set_only_once": 1
+  },
+  {
+   "fieldname": "payment_date",
+   "fieldtype": "Date",
+   "label": "Payment Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "airport",
+   "fieldtype": "Link",
+   "label": "Airport",
+   "options": "Airport",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-20 14:43:20.130579",
+ "modified": "2026-03-21 16:23:22.297138",
  "modified_by": "Administrator",
  "module": "Airport Shop Management",
  "name": "Rent Invoice",
@@ -114,11 +122,15 @@
  "states": [
   {
    "color": "Orange",
-   "title": "Unpaid"
+   "title": "Pending"
   },
   {
    "color": "Green",
    "title": "Paid"
+  },
+  {
+   "color": "Red",
+   "title": "Overdue"
   }
  ]
 }

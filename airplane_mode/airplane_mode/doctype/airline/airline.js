@@ -11,10 +11,6 @@ frappe.ui.form.on("Airline", {
 		if (!frm.doc.website) {
 			return;
 		}
-
-		frm.add_web_link(
-			frm.doc.website, // URL
-			"Website", // label hiển thị
-		);
+		frm.add_web_link(frm.doc.website, "Website");
 	},
 });

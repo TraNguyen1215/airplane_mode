@@ -1,4 +1,11 @@
-<div>
-	<a href="{{ doc.route }}">{{ doc.title or doc.name }}</a>
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border-bottom: 1px solid #fff;">
+	<div>
+		<h4 style='margin: 0;'>{{ frappe.db.get_value("Airplane", doc.airplane, "airline").split("-")[0] }}</h4>
+		{{ doc.shop_number }} - {{ doc.shop_type }} | {{ doc.status }}
+	</div>
+
+	<div>
+	{{ doc.tenant or "Not Assigned" }} |
+	</div>
+	<button style="background-color: #57705e; color: white; border: none; padding: 10px 20px; cursor: pointer;"><a style="color: white; text-decoration: none;" href="/{{ doc.route }}">View Shop</a></button>
 </div>
-<!-- this is a sample default list template -->
