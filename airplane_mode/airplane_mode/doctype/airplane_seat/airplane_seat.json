@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format: {row}{number}-{level}-{airplane}",
+ "creation": "2026-03-23 15:21:42.311086",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "level",
+  "airplane",
+  "amount",
+  "column_break_mpwl",
+  "row",
+  "number",
+  "note"
+ ],
+ "fields": [
+  {
+   "fieldname": "level",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Level",
+   "options": "Economy\nPremium Economy\nBusiness\nFirst",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_mpwl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "row",
+   "fieldtype": "Select",
+   "label": "Row",
+   "options": "A\nB\nC\nD\nE\nR\nG\nH\nI\nK\nL\nM\nN\nO\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "number",
+   "fieldtype": "Int",
+   "label": "Number",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "airplane",
+   "fieldtype": "Link",
+   "label": "Airplane",
+   "options": "Airplane",
+   "reqd": 1
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Select",
+   "label": "Note",
+   "options": "\nTop seats\nSeat near the window\nLast row seats"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "non_negative": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-23 16:13:48.741721",
+ "modified_by": "Administrator",
+ "module": "Airplane Mode",
+ "name": "Airplane Seat",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

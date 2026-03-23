@@ -17,8 +17,9 @@
   "shop_number",
   "tenant",
   "current_contract",
+  "is_published",
   "shop_type",
-  "is_published"
+  "month_rent"
  ],
  "fields": [
   {
@@ -81,12 +82,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "shop_type",
-   "fieldtype": "Link",
-   "label": "Shop Type",
-   "options": "Shop Type"
-  },
-  {
    "fieldname": "route",
    "fieldtype": "Data",
    "label": "Route"
@@ -96,6 +91,18 @@
    "fieldname": "is_published",
    "fieldtype": "Check",
    "label": "Is Published"
+  },
+  {
+   "fieldname": "shop_type",
+   "fieldtype": "Link",
+   "label": "Shop Type",
+   "options": "Shop Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "month_rent",
+   "fieldtype": "Currency",
+   "label": "Month Rent"
   }
  ],
  "grid_page_length": 50,
@@ -108,7 +115,7 @@
    "link_fieldname": "airline"
   }
  ],
- "modified": "2026-03-21 09:22:10.124837",
+ "modified": "2026-03-23 15:12:46.502850",
  "modified_by": "Administrator",
  "module": "Airport Shop Management",
  "name": "Airport Shop",

@@ -6,7 +6,8 @@
  "engine": "InnoDB",
  "field_order": [
   "allow_remind_to_payment_rental_shop",
-  "standard_rental_amount"
+  "standard_rental_amount",
+  "standard_ticket_flight_amount"
  ],
  "fields": [
   {
@@ -19,13 +20,18 @@
    "fieldname": "standard_rental_amount",
    "fieldtype": "Currency",
    "label": "Standard Rent Amount"
+  },
+  {
+   "fieldname": "standard_ticket_flight_amount",
+   "fieldtype": "Currency",
+   "label": "Standard Ticket Flight Amount"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2026-03-20 15:18:45.767074",
+ "modified": "2026-03-23 15:50:53.574238",
  "modified_by": "Administrator",
  "module": "Airport Shop Management",
  "name": "Airport Shop Management Settings",

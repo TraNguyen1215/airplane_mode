@@ -23,10 +23,9 @@ Departure:
 Duration:
 {{ frappe.utils.format_duration(doc.duartion) }}
 </p>
-
-{% comment %} <a href="/book-flight-ticket-web-form/new?flight={{ doc.name }}"
+<a href="/book-flight-ticket-web-form/new?flight={{ doc.name }}"
     style="background:green;color:white;padding:10px 20px;text-decoration:none;">
     Book Flight
-</a> {% endcomment %}
+</a>
 
 {% endblock %}

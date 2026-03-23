@@ -162,10 +162,10 @@ scheduler_events = {
 	# 	"airplane_mode.tasks.weekly"
 	# ],
 	"cron": {
-        "0 0 1 * *": [
-            "airplane_mode.airport_shop_management.doctype.airport_shop_management_settings.utils.send_rent_reminders"
-        ]
-    }
+		"30 8 24 * *": [
+			"airplane_mode.api.send_email_reminder_for_tenant"
+		]
+	}
 }
 
 # Testing
@@ -255,5 +255,8 @@ fixtures=[
         "filters":{
 			"route": "about-me"
 		}
+	},
+	{
+		"doctype": "Shop Type",
 	}
 ]

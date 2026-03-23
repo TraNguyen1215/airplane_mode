@@ -54,6 +54,7 @@
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Status",
    "options": "Scheduled\nCompleted\nCancelled"
   },
@@ -137,7 +138,7 @@
    "link_fieldname": "flight"
   }
  ],
- "modified": "2026-03-20 11:24:20.401632",
+ "modified": "2026-03-23 16:37:18.664193",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane Flight",

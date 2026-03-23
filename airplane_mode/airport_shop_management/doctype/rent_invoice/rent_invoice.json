@@ -15,7 +15,8 @@
   "airport",
   "month",
   "status",
-  "payment_date"
+  "payment_date",
+  "amended_from"
  ],
  "fields": [
   {
@@ -90,12 +91,23 @@
    "label": "Airport",
    "options": "Airport",
    "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Rent Invoice",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2026-03-21 16:23:22.297138",
+ "modified": "2026-03-23 09:16:01.375981",
  "modified_by": "Administrator",
  "module": "Airport Shop Management",
  "name": "Rent Invoice",

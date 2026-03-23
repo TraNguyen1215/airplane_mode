@@ -2,35 +2,35 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "prompt",
- "creation": "2026-03-20 15:27:47.840452",
+ "creation": "2026-03-23 09:39:33.474387",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "description",
-  "column_break_whfb",
+  "column_break_akrb",
   "enabled"
  ],
  "fields": [
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
   {
    "fieldname": "description",
    "fieldtype": "Data",
    "label": "Description"
   },
   {
-   "default": "0",
-   "fieldname": "enabled",
-   "fieldtype": "Check",
-   "label": "Enabled?"
-  },
-  {
-   "fieldname": "column_break_whfb",
+   "fieldname": "column_break_akrb",
    "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-20 15:28:47.651207",
+ "modified": "2026-03-23 09:45:52.497988",
  "modified_by": "Administrator",
  "module": "Airport Shop Management",
  "name": "Shop Type",

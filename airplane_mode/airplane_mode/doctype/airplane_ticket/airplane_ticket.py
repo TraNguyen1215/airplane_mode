@@ -21,7 +21,23 @@ class AirplaneTicket(Document):
         self.set("add_ons", cleaned_addons)
 
         total_addons = sum([d.amount for d in self.add_ons])
-        self.total_amount = flt(self.flight_price) + flt(total_addons)
+
+        # seat
+        list_seats =[]
+        for ls in self.seat:
+            if ls.item not in list_seats:
+                list_seats.append({
+					"item": ls.item,
+					"row": ls.row,
+					"number": ls.number,
+					"level": ls.level,
+					"amount": ls.amount
+				})
+        self.set("seat", list_seats)
+
+        total_seat_amount = sum([d.amount for d in self.seat])
+
+        self.total_amount = flt(total_addons) + flt(total_seat_amount)
 
         flight = frappe.get_doc("Airplane Flight", self.flight)
 
@@ -44,7 +60,7 @@ class AirplaneTicket(Document):
         if self.status != "Boarded":
             frappe.throw("Chỉ có thể Submit vé khi trạng thái là 'Boarded'!")
 
-    def before_insert(self):
-        number = random.randint(1, 150)
-        letter = random.choice(["A","B","C","D","E"])
-        self.seat = f"{number}{letter}"
+    # def before_insert(self):
+    #     number = random.randint(1, 150)
+    #     letter = random.choice(["A","B","C","D","E"])
+    #     self.seat = f"{number}{letter}"
