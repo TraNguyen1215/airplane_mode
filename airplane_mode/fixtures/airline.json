@@ -1,0 +1,72 @@
+[
+ {
+  "custome_care_number": "+60-3-21719333",
+  "docstatus": 0,
+  "doctype": "Airline",
+  "founding_year": 1993,
+  "headquaters": "Kuala Lumpur",
+  "modified": "2026-03-19 14:33:54.995531",
+  "name": "AirAsia",
+  "website": null
+ },
+ {
+  "custome_care_number": "+84 012456658",
+  "docstatus": 0,
+  "doctype": "Airline",
+  "founding_year": 2010,
+  "headquaters": "Hanoi",
+  "modified": "2026-03-19 14:33:55.003848",
+  "name": "BamBoo AirWay",
+  "website": null
+ },
+ {
+  "custome_care_number": "+91-124-4352500",
+  "docstatus": 0,
+  "doctype": "Airline",
+  "founding_year": 2006,
+  "headquaters": "Gurgaon",
+  "modified": "2026-03-19 14:33:55.009777",
+  "name": "IndiGo",
+  "website": null
+ },
+ {
+  "custome_care_number": "+65-62238888",
+  "docstatus": 0,
+  "doctype": "Airline",
+  "founding_year": 1947,
+  "headquaters": "Singapore",
+  "modified": "2026-03-19 14:33:55.014350",
+  "name": "Singapore Airlines",
+  "website": null
+ },
+ {
+  "custome_care_number": "+66-23561000",
+  "docstatus": 0,
+  "doctype": "Airline",
+  "founding_year": 1960,
+  "headquaters": "Bangkok",
+  "modified": "2026-03-19 14:33:55.019125",
+  "name": "Thai Airways",
+  "website": null
+ },
+ {
+  "custome_care_number": "+84-24-38272289",
+  "docstatus": 0,
+  "doctype": "Airline",
+  "founding_year": 1956,
+  "headquaters": "Hanoi",
+  "modified": "2026-03-20 08:38:47.301606",
+  "name": "Vietnam Airlines",
+  "website": "https://www.vietnamairlines.com/"
+ },
+ {
+  "custome_care_number": "+56223688741",
+  "docstatus": 0,
+  "doctype": "Airline",
+  "founding_year": 1956,
+  "headquaters": "GHJ",
+  "modified": "2026-03-19 14:41:16.378093",
+  "name": "IndiGo_2",
+  "website": null
+ }
+]

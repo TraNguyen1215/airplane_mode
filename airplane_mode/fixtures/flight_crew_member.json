@@ -1,0 +1,26 @@
+[
+ {
+  "airline": "BamBoo AirWay",
+  "date_of_birth": null,
+  "docstatus": 0,
+  "doctype": "Flight Crew Member",
+  "first_name": "Nguyen",
+  "is_assigned": 0,
+  "last_name": "Van Binh",
+  "modified": "2026-03-20 10:52:09.508916",
+  "name": "Nguyen Van Binh",
+  "status": "Active"
+ },
+ {
+  "airline": "Vietnam Airlines",
+  "date_of_birth": null,
+  "docstatus": 0,
+  "doctype": "Flight Crew Member",
+  "first_name": "Dinh",
+  "is_assigned": 0,
+  "last_name": "Huynh Duong",
+  "modified": "2026-03-20 10:57:38.166098",
+  "name": "Dinh Huynh Duong",
+  "status": "Active"
+ }
+]

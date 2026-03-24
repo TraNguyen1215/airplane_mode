@@ -1,0 +1,227 @@
+[
+ {
+  "add_ons": [],
+  "amended_from": null,
+  "departure_date": "2026-03-16",
+  "departure_time": "14:50:10",
+  "destination_airport_code": "HAN",
+  "docstatus": 1,
+  "doctype": "Airplane Ticket",
+  "duration_of_flight": 10800.0,
+  "flight": "Singapore Airlines-0007",
+  "gate_number": null,
+  "modified": "2026-03-19 15:44:54.539507",
+  "name": "Singapore Airlines-0007-SIN-to-HAN-002",
+  "passenger": "1",
+  "seat": [],
+  "source_airport_code": "SIN",
+  "status": "Boarded",
+  "total_amount": 0.0
+ },
+ {
+  "add_ons": [],
+  "amended_from": null,
+  "departure_date": "2026-03-17",
+  "departure_time": "5:28:00",
+  "destination_airport_code": "SGN",
+  "docstatus": 1,
+  "doctype": "Airplane Ticket",
+  "duration_of_flight": 7200.0,
+  "flight": "Vietnam Airlines-001",
+  "gate_number": null,
+  "modified": "2026-03-19 15:44:54.555006",
+  "name": "Vietnam Airlines-001-HAN-to-SGN-003",
+  "passenger": "3",
+  "seat": [],
+  "source_airport_code": "HAN",
+  "status": "Booked",
+  "total_amount": 0.0
+ },
+ {
+  "add_ons": [],
+  "amended_from": null,
+  "departure_date": "2026-03-18",
+  "departure_time": "14:51:50",
+  "destination_airport_code": "BKK",
+  "docstatus": 2,
+  "doctype": "Airplane Ticket",
+  "duration_of_flight": 5400.0,
+  "flight": "IndiGo-0001",
+  "gate_number": null,
+  "modified": "2026-03-19 15:44:54.550265",
+  "name": "IndiGo-0001-BLR-to-BKK-004",
+  "passenger": "4",
+  "seat": [],
+  "source_airport_code": "BLR",
+  "status": "Booked",
+  "total_amount": 0.0
+ },
+ {
+  "add_ons": [],
+  "amended_from": "IndiGo-0001-BLR-to-BKK-004",
+  "departure_date": "2026-03-18",
+  "departure_time": "14:51:50",
+  "destination_airport_code": "BKK",
+  "docstatus": 1,
+  "doctype": "Airplane Ticket",
+  "duration_of_flight": 5400.0,
+  "flight": "IndiGo-0001",
+  "gate_number": null,
+  "modified": "2026-03-19 15:44:54.545761",
+  "name": "IndiGo-0001-BLR-to-BKK-004-1",
+  "passenger": "4",
+  "seat": [],
+  "source_airport_code": "BLR",
+  "status": "Checked-In",
+  "total_amount": 0.0
+ },
+ {
+  "add_ons": [
+   {
+    "amount": 20.0,
+    "item": "Extra Luggage",
+    "parent": "Vietnam Airlines-001-HAN-to-BLR-005",
+    "parentfield": "add_ons",
+    "parenttype": "Airplane Ticket"
+   },
+   {
+    "amount": 10.0,
+    "item": "Meal",
+    "parent": "Vietnam Airlines-001-HAN-to-BLR-005",
+    "parentfield": "add_ons",
+    "parenttype": "Airplane Ticket"
+   },
+   {
+    "amount": 50.0,
+    "item": "Up Level Chair",
+    "parent": "Vietnam Airlines-001-HAN-to-BLR-005",
+    "parentfield": "add_ons",
+    "parenttype": "Airplane Ticket"
+   }
+  ],
+  "amended_from": null,
+  "departure_date": "2026-03-26",
+  "departure_time": "8:20:07",
+  "destination_airport_code": "HAN",
+  "docstatus": 0,
+  "doctype": "Airplane Ticket",
+  "duration_of_flight": 4500.0,
+  "flight": "Vietnam Airlines-0006-03-2026-00012",
+  "gate_number": "Gate Number 4",
+  "modified": "2026-03-24 08:43:38.384998",
+  "name": "Vietnam Airlines-001-HAN-to-BLR-005",
+  "passenger": "4",
+  "seat": [],
+  "source_airport_code": "SGN",
+  "status": "Booked",
+  "total_amount": 80.0
+ },
+ {
+  "add_ons": [
+   {
+    "amount": 10.0,
+    "item": "Meal",
+    "parent": "Vietnam Airlines-001-03-2026-00006-HAN-to-SGN-007",
+    "parentfield": "add_ons",
+    "parenttype": "Airplane Ticket"
+   }
+  ],
+  "amended_from": null,
+  "departure_date": "2026-03-18",
+  "departure_time": "15:27:43",
+  "destination_airport_code": "SGN",
+  "docstatus": 1,
+  "doctype": "Airplane Ticket",
+  "duration_of_flight": 7200.0,
+  "flight": "Vietnam Airlines-001-03-2026-00006",
+  "gate_number": null,
+  "modified": "2026-03-20 09:07:30.457601",
+  "name": "Vietnam Airlines-001-03-2026-00006-HAN-to-SGN-007",
+  "passenger": "5",
+  "seat": [],
+  "source_airport_code": "HAN",
+  "status": "Boarded",
+  "total_amount": 460.0
+ },
+ {
+  "add_ons": [],
+  "amended_from": null,
+  "departure_date": "2026-03-26",
+  "departure_time": "8:20:07",
+  "destination_airport_code": "HAN",
+  "docstatus": 0,
+  "doctype": "Airplane Ticket",
+  "duration_of_flight": 4500.0,
+  "flight": "Vietnam Airlines-0006-03-2026-00012",
+  "gate_number": "Gate Number 4",
+  "modified": "2026-03-24 08:43:38.399892",
+  "name": "Vietnam Airlines-001-03-2026-00006-HAN-to-SGN-008",
+  "passenger": "6",
+  "seat": [],
+  "source_airport_code": "SGN",
+  "status": "Booked",
+  "total_amount": 0.0
+ },
+ {
+  "add_ons": [
+   {
+    "amount": 20.0,
+    "item": "Meal",
+    "parent": "Vietnam Airlines-001-03-2026-00010-HAN-to-SGN-011",
+    "parentfield": "add_ons",
+    "parenttype": "Airplane Ticket"
+   },
+   {
+    "amount": 60.0,
+    "item": "Extra Luggage",
+    "parent": "Vietnam Airlines-001-03-2026-00010-HAN-to-SGN-011",
+    "parentfield": "add_ons",
+    "parenttype": "Airplane Ticket"
+   },
+   {
+    "amount": 100.0,
+    "item": "Up Level Chair",
+    "parent": "Vietnam Airlines-001-03-2026-00010-HAN-to-SGN-011",
+    "parentfield": "add_ons",
+    "parenttype": "Airplane Ticket"
+   }
+  ],
+  "amended_from": null,
+  "departure_date": "2026-03-26",
+  "departure_time": "8:20:07",
+  "destination_airport_code": "HAN",
+  "docstatus": 0,
+  "doctype": "Airplane Ticket",
+  "duration_of_flight": 4500.0,
+  "flight": "Vietnam Airlines-0006-03-2026-00012",
+  "gate_number": "Gate Number 4",
+  "modified": "2026-03-24 08:43:38.396887",
+  "name": "Vietnam Airlines-001-03-2026-00010-HAN-to-SGN-011",
+  "passenger": "4",
+  "seat": [
+   {
+    "amount": 480.0,
+    "item": "A10-Premium Economy-Vietnam Airlines-001",
+    "level": "Premium Economy",
+    "number": "10",
+    "parent": "Vietnam Airlines-001-03-2026-00010-HAN-to-SGN-011",
+    "parentfield": "seat",
+    "parenttype": "Airplane Ticket",
+    "row": "A"
+   },
+   {
+    "amount": 480.0,
+    "item": "A11-Premium Economy-Vietnam Airlines-001",
+    "level": "Premium Economy",
+    "number": "11",
+    "parent": "Vietnam Airlines-001-03-2026-00010-HAN-to-SGN-011",
+    "parentfield": "seat",
+    "parenttype": "Airplane Ticket",
+    "row": "A"
+   }
+  ],
+  "source_airport_code": "SGN",
+  "status": "Booked",
+  "total_amount": 1140.0
+ }
+]

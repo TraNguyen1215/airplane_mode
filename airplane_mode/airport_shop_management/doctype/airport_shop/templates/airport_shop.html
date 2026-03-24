@@ -1,24 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Airport Shop {{ doc.name }}</title>
-	<link rel="stylesheet" href="/assets/airplane_mode/css/pinic.css">
-</head>
-<body>
-	<div class="container">
-		<h1>Shop {{ doc.name }}</h1>
-		<p>Airport: {{ doc.airport }}</p>
-		<p>Shop Number: {{ doc.shop_number }}</p>
-		<p>Shop Type: {{ doc.shop_type }}</p>
-		<p>Status: {{ doc.status }}</p>
-		<a href="/shop-lead-web-form/new?shop_type={{ doc.shop_type }}"
-			style="background:green;color:white;padding:10px 20px;text-decoration:none;">
-			Create Shop Lead
-		</a>
-	</div>
-</body>
-</html>
+{% extends "templates/web.html" %}
 
-
+{% block page_content %}
+<h1>Shop {{ doc.name }}</h1>
+<p>Airport: {{ doc.airport }}</p>
+<p>Shop Number: {{ doc.shop_number }}</p>
+<p>Shop Type: {{ doc.shop_type }}</p>
+<p>Status: {{ doc.status }}</p>
+<p>Rent Amount Per Month: {{ doc.rent_amount }}</p>
+<p>Area: {{ doc.area }} m2</p>
+<a href="/shop-lead-web-form/new?shop_type={{ doc.shop_type }}"
+	style="background:green;color:white;padding:10px 20px;text-decoration:none;">
+	Create Shop Lead
+</a>
+{% endblock %}

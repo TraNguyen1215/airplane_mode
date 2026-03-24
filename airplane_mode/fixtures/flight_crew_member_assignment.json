@@ -1,0 +1,44 @@
+[
+ {
+  "airline": "Vietnam Airlines",
+  "airplane": "Vietnam Airlines-001",
+  "crew_name": "Dinh Huynh Duong",
+  "docstatus": 1,
+  "doctype": "Flight Crew Member Assignment",
+  "is_airplane": 0,
+  "modified": "2026-03-23 16:36:24.533809",
+  "name": "ghmuj5r603",
+  "parent": "Vietnam Airlines-001-03-2026-00010",
+  "parentfield": "flight_crew",
+  "parenttype": "Airplane Flight",
+  "role": "Captain"
+ },
+ {
+  "airline": null,
+  "airplane": null,
+  "crew_name": "Dinh Huynh Duong",
+  "docstatus": 0,
+  "doctype": "Flight Crew Member Assignment",
+  "is_airplane": 0,
+  "modified": "2026-03-24 09:53:54.519348",
+  "name": "nj3328pne9",
+  "parent": "Vietnam Airlines-0006-03-2026-00012",
+  "parentfield": "flight_crew",
+  "parenttype": "Airplane Flight",
+  "role": "Captain"
+ },
+ {
+  "airline": null,
+  "airplane": null,
+  "crew_name": "Nguyen Van Binh",
+  "docstatus": 0,
+  "doctype": "Flight Crew Member Assignment",
+  "is_airplane": 0,
+  "modified": "2026-03-24 09:53:54.519348",
+  "name": "nj3tmnp4vd",
+  "parent": "Vietnam Airlines-0006-03-2026-00012",
+  "parentfield": "flight_crew",
+  "parenttype": "Airplane Flight",
+  "role": "First Officer"
+ }
+]

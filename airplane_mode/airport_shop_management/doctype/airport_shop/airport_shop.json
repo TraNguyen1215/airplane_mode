@@ -17,8 +17,8 @@
   "shop_number",
   "shop_type",
   "status",
-  "month_rent",
   "is_published",
+  "rent_amount",
   "section_break_sfuk",
   "current_contract",
   "contract_expiry",
@@ -104,11 +104,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "month_rent",
-   "fieldtype": "Currency",
-   "label": "Month Rent"
-  },
-  {
    "fieldname": "section_break_sfuk",
    "fieldtype": "Section Break",
    "label": "Tenant Contract"
@@ -127,6 +122,11 @@
    "fieldname": "contract_expiry",
    "fieldtype": "Date",
    "label": "Contract Expiry"
+  },
+  {
+   "fieldname": "rent_amount",
+   "fieldtype": "Currency",
+   "label": "Rent Amount"
   }
  ],
  "grid_page_length": 50,
@@ -134,7 +134,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2026-03-24 09:39:41.537661",
+ "modified": "2026-03-24 10:12:01.237590",
  "modified_by": "Administrator",
  "module": "Airport Shop Management",
  "name": "Airport Shop",

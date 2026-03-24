@@ -162,7 +162,7 @@ scheduler_events = {
 	# 	"airplane_mode.tasks.weekly"
 	# ],
 	"cron": {
-		"30 8 24 * *": [
+		"30 8 25 * *": [
 			"airplane_mode.api.send_email_reminder_for_tenant"
 		]
 	}
@@ -260,3 +260,11 @@ fixtures=[
 		"doctype": "Shop Type",
 	}
 ]
+doc_events = {
+	# "Shop Contract": {
+	# 	"before_insert": "airplane_mode.api.create_rent_invoice_for_active_contracts",
+	# },
+    "Rent Invoice": {
+		"*": "airplane_mode.api.send_email_reminder_for_tenant",
+	},
+}

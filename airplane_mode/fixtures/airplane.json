@@ -1,0 +1,62 @@
+[
+ {
+  "airline": "AirAsia",
+  "capacity": 186,
+  "docstatus": 0,
+  "doctype": "Airplane",
+  "initial_audit_completed": 0,
+  "model": "Airbus A320",
+  "modified": "2026-03-19 14:37:24.288585",
+  "name": "AirAsia-0005"
+ },
+ {
+  "airline": "IndiGo",
+  "capacity": 180,
+  "docstatus": 0,
+  "doctype": "Airplane",
+  "initial_audit_completed": 0,
+  "model": "Airbus A320",
+  "modified": "2026-03-19 14:37:24.343189",
+  "name": "IndiGo-0001"
+ },
+ {
+  "airline": "IndiGo",
+  "capacity": 220,
+  "docstatus": 0,
+  "doctype": "Airplane",
+  "initial_audit_completed": 0,
+  "model": "Airbus A321",
+  "modified": "2026-03-19 14:37:24.346398",
+  "name": "IndiGo-0004"
+ },
+ {
+  "airline": "Singapore Airlines",
+  "capacity": 303,
+  "docstatus": 0,
+  "doctype": "Airplane",
+  "initial_audit_completed": 0,
+  "model": "Airbus A350",
+  "modified": "2026-03-19 14:37:24.349340",
+  "name": "Singapore Airlines-0007"
+ },
+ {
+  "airline": "Vietnam Airlines",
+  "capacity": 180,
+  "docstatus": 0,
+  "doctype": "Airplane",
+  "initial_audit_completed": 0,
+  "model": "Boeing 787",
+  "modified": "2026-03-19 14:39:23.423933",
+  "name": "Vietnam Airlines-001"
+ },
+ {
+  "airline": "Vietnam Airlines",
+  "capacity": 274,
+  "docstatus": 0,
+  "doctype": "Airplane",
+  "initial_audit_completed": 0,
+  "model": "Boeing 787",
+  "modified": "2026-03-19 14:37:24.352542",
+  "name": "Vietnam Airlines-0006"
+ }
+]

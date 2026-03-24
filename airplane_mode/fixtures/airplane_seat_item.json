@@ -1,0 +1,30 @@
+[
+ {
+  "amount": 480.0,
+  "docstatus": 0,
+  "doctype": "Airplane Seat Item",
+  "item": "A10-Premium Economy-Vietnam Airlines-001",
+  "level": "Premium Economy",
+  "modified": "2026-03-24 08:22:50.253185",
+  "name": "2h6n6irn4g",
+  "number": "10",
+  "parent": "Vietnam Airlines-001-03-2026-00010-HAN-to-SGN-011",
+  "parentfield": "seat",
+  "parenttype": "Airplane Ticket",
+  "row": "A"
+ },
+ {
+  "amount": 480.0,
+  "docstatus": 0,
+  "doctype": "Airplane Seat Item",
+  "item": "A11-Premium Economy-Vietnam Airlines-001",
+  "level": "Premium Economy",
+  "modified": "2026-03-24 08:22:50.253483",
+  "name": "2h6ed6tth4",
+  "number": "11",
+  "parent": "Vietnam Airlines-001-03-2026-00010-HAN-to-SGN-011",
+  "parentfield": "seat",
+  "parenttype": "Airplane Ticket",
+  "row": "A"
+ }
+]

@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_auto_repeat": 1,
  "allow_rename": 1,
  "autoname": "naming_series:",
  "creation": "2026-03-20 11:52:43.865085",
@@ -7,35 +8,39 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
+  "contract",
   "shop",
   "tenant",
-  "contract",
-  "amount",
+  "rent_amount",
   "column_break_ajna",
   "airport",
   "month",
+  "year",
   "status",
   "payment_date",
   "amended_from"
  ],
  "fields": [
   {
+   "fetch_from": "contract.shop",
    "fieldname": "shop",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Shop",
    "options": "Airport Shop",
    "reqd": 1
   },
   {
+   "fetch_from": "contract.tenant",
    "fieldname": "tenant",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Tenant",
    "options": "Tenant",
    "reqd": 1
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "contract",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -57,15 +62,12 @@
    "reqd": 1
   },
   {
-   "fetch_from": "contract.rent_amount",
-   "fieldname": "amount",
-   "fieldtype": "Currency",
-   "label": "Amount",
-   "non_negative": 1
-  },
-  {
+   "allow_on_submit": 1,
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Status",
    "options": "Pending\nPaid\nOverdue"
   },
@@ -102,13 +104,28 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "label": "Year",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "contract.rent_amount",
+   "fieldname": "rent_amount",
+   "fieldtype": "Currency",
+   "label": "Rent Amount",
+   "non_negative": 1,
+   "options": "Shop Contract"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-03-24 09:02:51.638007",
+ "modified": "2026-03-24 14:46:06.930665",
  "modified_by": "Administrator",
  "module": "Airport Shop Management",
  "name": "Rent Invoice",
