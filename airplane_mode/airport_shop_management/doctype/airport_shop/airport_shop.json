@@ -8,18 +8,22 @@
  "document_type": "Document",
  "engine": "InnoDB",
  "field_order": [
+  "shop_details_section",
   "shop_name",
   "airport",
-  "status",
   "area",
   "route",
   "column_break_lohn",
   "shop_number",
-  "tenant",
-  "current_contract",
-  "is_published",
   "shop_type",
-  "month_rent"
+  "status",
+  "month_rent",
+  "is_published",
+  "section_break_sfuk",
+  "current_contract",
+  "contract_expiry",
+  "column_break_tynu",
+  "tenant"
  ],
  "fields": [
   {
@@ -103,19 +107,34 @@
    "fieldname": "month_rent",
    "fieldtype": "Currency",
    "label": "Month Rent"
+  },
+  {
+   "fieldname": "section_break_sfuk",
+   "fieldtype": "Section Break",
+   "label": "Tenant Contract"
+  },
+  {
+   "fieldname": "column_break_tynu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shop_details_section",
+   "fieldtype": "Section Break",
+   "label": "Shop Details"
+  },
+  {
+   "fetch_from": "current_contract.end_date",
+   "fieldname": "contract_expiry",
+   "fieldtype": "Date",
+   "label": "Contract Expiry"
   }
  ],
  "grid_page_length": 50,
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
- "links": [
-  {
-   "link_doctype": "Airplane",
-   "link_fieldname": "airline"
-  }
- ],
- "modified": "2026-03-23 15:12:46.502850",
+ "links": [],
+ "modified": "2026-03-24 09:39:41.537661",
  "modified_by": "Administrator",
  "module": "Airport Shop Management",
  "name": "Airport Shop",

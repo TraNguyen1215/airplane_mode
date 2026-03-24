@@ -57,6 +57,7 @@
    "reqd": 1
   },
   {
+   "fetch_from": "contract.rent_amount",
    "fieldname": "amount",
    "fieldtype": "Currency",
    "label": "Amount",
@@ -107,7 +108,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-03-23 09:16:01.375981",
+ "modified": "2026-03-24 09:02:51.638007",
  "modified_by": "Administrator",
  "module": "Airport Shop Management",
  "name": "Rent Invoice",

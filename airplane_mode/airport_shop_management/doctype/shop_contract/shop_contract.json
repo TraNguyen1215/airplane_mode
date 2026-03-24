@@ -7,8 +7,9 @@
  "engine": "InnoDB",
  "field_order": [
   "shop",
-  "start_date",
   "tenant",
+  "start_date",
+  "month_rent",
   "column_break_ffhg",
   "status",
   "rent_amount",
@@ -62,12 +63,18 @@
   {
    "fieldname": "column_break_ffhg",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "month_rent",
+   "fieldtype": "Int",
+   "label": "Month Rent",
+   "non_negative": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-20 14:47:38.250222",
+ "modified": "2026-03-24 09:13:27.887837",
  "modified_by": "Administrator",
  "module": "Airport Shop Management",
  "name": "Shop Contract",

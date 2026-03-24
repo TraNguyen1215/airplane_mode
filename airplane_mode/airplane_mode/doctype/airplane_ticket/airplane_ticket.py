@@ -64,3 +64,7 @@ class AirplaneTicket(Document):
     #     number = random.randint(1, 150)
     #     letter = random.choice(["A","B","C","D","E"])
     #     self.seat = f"{number}{letter}"
+
+    # def on_update(self):
+    #     if self.has_value_changed("flight"):
+    #         # Cap nhat lai name trong Airplane Ticket khi flight thay doi

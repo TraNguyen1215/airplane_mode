@@ -23,6 +23,10 @@ class AirplaneFlight(Document):
         context.airline = airline
         context.airline_short = airline.split("-")[0] if airline else ""
 
+    def before_save(self):
+        if not self.route:
+            self.route = f"/flights/{self.name}"
+
     def on_update(self):
         if self.has_value_changed("gate_number"):
             frappe.enqueue(
@@ -30,3 +34,4 @@ class AirplaneFlight(Document):
 				flight=self.name,
 				gate=self.gate_number
 			)
+
