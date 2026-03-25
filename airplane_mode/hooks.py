@@ -162,7 +162,7 @@ scheduler_events = {
 	# 	"airplane_mode.tasks.weekly"
 	# ],
 	"cron": {
-		"30 8 25 * *": [
+		"30 14 26 * *": [
 			"airplane_mode.api.send_email_reminder_for_tenant"
 		]
 	}

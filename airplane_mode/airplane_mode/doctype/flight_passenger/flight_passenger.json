@@ -8,9 +8,11 @@
  "field_order": [
   "first_name",
   "full_name",
+  "email",
   "column_break_syba",
   "last_name",
-  "date_of_birth"
+  "date_of_birth",
+  "phone"
  ],
  "fields": [
   {
@@ -41,6 +43,16 @@
    "fieldtype": "Data",
    "label": "Full Name",
    "read_only": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "Phone"
   }
  ],
  "grid_page_length": 50,
@@ -51,7 +63,7 @@
    "link_fieldname": "passenger"
   }
  ],
- "modified": "2026-03-19 15:02:51.889687",
+ "modified": "2026-03-25 16:39:01.506505",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Flight Passenger",

@@ -1,0 +1,32 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.status==\"Booked\"",
+ "creation": "2026-03-25 16:08:58.103401",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Airplane Ticket",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<h3>Thank you for your Order</h3>\n\n<h4>Ticket {{ doc.name }}</h4>\n\n\n<h4>Details</h4>\n\n<ul>\n<li>Customer: {{ doc.passenger }}</li>\n<li>Flight: {{doc.flight}}>/li>\n<li>Departure Date: {{doc.departure_date}}</li>\n<li>Departure Time: {{doc.departure_time}}</li>\n<li>Gate Number: {{doc.gate_number}}</li>\n<li>Duration Of Flight: {{doc.duration_of_flight}}</li>\n</ul>",
+ "message_type": "HTML",
+ "modified": "2026-03-25 16:42:10.090624",
+ "modified_by": "Administrator",
+ "module": "Airplane Mode",
+ "name": "Booked Airplane Ticket Notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "Tratthunguyen1215",
+ "sender_email": "tratthunguyen1215@gmail.com",
+ "subject": "{{doc.passenger}} had booked completely the {{doc.flight}} ticket."
+}

@@ -15,18 +15,18 @@ def send_email_reminder_for_tenant():
     rent_invoice = frappe.get_all(
 		"Rent Invoice",
 		filters={
-			"status": ["!=", "Paid"]
+			"status": ["!=", "Cancelled"] and ["!=", "Paid"],
 		},
 		fields=["name", "tenant", "rent_amount", "payment_date", "status", "contract", "shop"]
 	)
 
     settings = frappe.get_single("Airport Shop Management Settings")
 
-    if settings.allow_remind_to_payment_rental_shop == False or not settings.email_for_reminder or settings.email_for_reminder == 0:
+    if settings.allow_remind_to_payment_rental_shop == False or not settings.allow_remind_to_payment_rental_shop or settings.allow_remind_to_payment_rental_shop == 0:
         return
 
     for invoice in rent_invoice:
-        tenant_email = "tratthunguyen1215@gmail.com"
+        tenant_email = frappe.db.get_value("Tenant", invoice.tenant, "email")
         if tenant_email:
             frappe.sendmail(
 				recipients=tenant_email,
@@ -69,3 +69,21 @@ def create_rent_invoice_for_active_contracts():
 			invoice.amount = contract.total_amount
 			invoice.contract = contract.name
 			invoice.save()
+
+def send_email_notification_for_change_gate(flight, gate):
+	tickets = frappe.get_all("Airplane Ticket",
+		filters={"flight": flight},
+		fields=["name"]
+	)
+
+	for t in tickets:
+		if t.name:
+			frappe.sendmail(
+				recipients="tratthunguyen1215@gmail.com",
+				subject="Gate Change Notification",
+				message=f"""Dear Passenger,
+				We would like to inform you that the gate for your flight {flight} has been changed to {gate}.
+				Please make sure to check the updated gate information before your departure.
+				Thank you for your understanding.
+				""",
+		)

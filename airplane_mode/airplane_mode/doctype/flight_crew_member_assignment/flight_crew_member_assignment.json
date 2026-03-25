@@ -10,7 +10,6 @@
   "is_airplane",
   "column_break_qmdt",
   "role",
-  "airplane",
   "airline"
  ],
  "fields": [
@@ -34,14 +33,7 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "airplane",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Airplane",
-   "options": "Airplane"
-  },
-  {
-   "fetch_from": "airplane.airline",
+   "fetch_from": "crew_name.airline",
    "fieldname": "airline",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -60,7 +52,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-03-20 11:00:51.988188",
+ "modified": "2026-03-25 15:18:12.172882",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Flight Crew Member Assignment",
