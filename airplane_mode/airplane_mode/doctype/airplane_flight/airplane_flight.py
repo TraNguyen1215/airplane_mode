@@ -11,7 +11,7 @@ from frappe.website.website_generator import WebsiteGenerator
 class AirplaneFlight(Document):
     def before_save(self):
         if not self.route:
-            self.route = f"/flights/{self.name}"
+            self.route = f"flights/{self.name}"
 
         for row in self.flight_crew:
             frappe.db.set_value(
@@ -30,6 +30,14 @@ class AirplaneFlight(Document):
                 "is_assigned",
                 0
             )
+        frappe.publish_realtime(
+            event="flight_scheduled",
+            message={
+                "flight": self.name,
+                "route": self.route,
+                "status": self.status
+            }
+        )
 
     def on_update(self):
         if self.has_value_changed("gate_number"):

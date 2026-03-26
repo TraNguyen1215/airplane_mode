@@ -268,3 +268,7 @@ doc_events = {
 		"*": "airplane_mode.api.send_email_reminder_for_tenant",
 	},
 }
+
+app_include_js = [
+	"assets/airplane_mode/js/flight_realtime.js"
+]

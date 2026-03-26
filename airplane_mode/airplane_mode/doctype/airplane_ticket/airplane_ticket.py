@@ -55,7 +55,6 @@ class AirplaneTicket(Document):
 
         if ticket_count >= capacity:
             frappe.throw("Flight is already full")
-
     def before_submit(self):
         if self.status != "Boarded":
             frappe.throw("Chỉ có thể Submit vé khi trạng thái là 'Boarded'!")

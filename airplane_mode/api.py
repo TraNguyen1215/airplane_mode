@@ -11,6 +11,16 @@ def update_gate_in_tickets(flight, gate):
     for t in tickets:
         frappe.db.set_value("Airplane Ticket", t.name, "gate_number", gate)
 
+def update_status_in_tickets(flight, status):
+    tickets = frappe.get_all("Airplane Ticket",
+		filters={"flight": flight},
+		fields=["name", "status", "departure_time", "departure_date"]
+	)
+
+    for t in tickets:
+        if t.departure_date == today() and t.departure_time <= frappe.utils.nowtime():
+            frappe.db.set_value("Airplane Ticket", t.name, "status", status)
+
 def send_email_reminder_for_tenant():
     rent_invoice = frappe.get_all(
 		"Rent Invoice",
