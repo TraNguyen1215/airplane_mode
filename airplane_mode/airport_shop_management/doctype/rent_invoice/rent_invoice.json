@@ -91,6 +91,8 @@
   {
    "fieldname": "airport",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Airport",
    "options": "Airport",
    "reqd": 1
@@ -125,7 +127,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-03-25 13:51:53.652724",
+ "modified": "2026-03-27 10:23:57.742340",
  "modified_by": "Administrator",
  "module": "Airport Shop Management",
  "name": "Rent Invoice",

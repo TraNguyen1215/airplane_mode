@@ -4,8 +4,15 @@
 frappe.query_reports["Rent Payment Per Month Airport"] = {
 	filters: [
 		{
-			fieldname: "airport_shop",
-			label: "Airport Shop",
+			fieldname: "airport",
+			label: "Airport",
+			fieldtype: "Link",
+			options: "Airport",
+			reqd: 0,
+		},
+		{
+			fieldname: "shop",
+			label: "Shop",
 			fieldtype: "Link",
 			options: "Airport Shop",
 			reqd: 0,
@@ -40,6 +47,12 @@ frappe.query_reports["Rent Payment Per Month Airport"] = {
 			label: "Contract",
 			fieldtype: "Link",
 			options: "Shop Contract",
+		},
+		{
+			fieldname: "tenant",
+			label: "Tenant",
+			fieldtype: "Link",
+			options: "Tenant",
 		},
 	],
 };
